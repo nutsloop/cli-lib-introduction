@@ -1,0 +1,64 @@
+{
+  "name": "@nutsloop/cli-lib-introduction",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "description": "CLI Development in TypeScript",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "os": [
+    "!win32"
+  ],
+  "main": "index.js",
+  "bin": {
+    "fun": "./bin/fun.js"
+  },
+  "types": "./types/index.d.ts",
+  "files": [
+    "bin",
+    "lib",
+    "index.js",
+    "types"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "clean": "./scripts/clean.sh",
+    "tsc-watch": "npx tsc-watch --onSuccess \"sh ./scripts/chmod.u+x.sh\""
+  },
+  "dependencies": {
+    "@ivy-industries/input": "^1.0.0-alpha.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.4.5",
+    "tsc-watch": "^6.2.0"
+  },
+  "keywords": [
+    "cli",
+    "typescript",
+    "library",
+    "nutsloop",
+    "blog",
+    "post"
+  ],
+  "author": {
+    "name": "nutsloop",
+    "email": "nutsloop@proton.me",
+    "url": "https://github.com/nutsloop"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/ivy-industries"
+    }
+  ],
+  "homepage": "https://github.com/nutsloop/cli-lib-introduction#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nutsloop/cli-lib-introduction.git"
+  }
+}
